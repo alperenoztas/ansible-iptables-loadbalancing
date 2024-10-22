@@ -1,3 +1,3 @@
 [servers]
-node02 ansible_host=192.168.1.33 ansible_user=node02
-node03 ansible_host=192.168.1.34 ansible_user=node03
+node02 ansible_host=192.168.1.33 ansible_user=node02 ansible_become_pass="{{ ansible_become_pass_node02 }}"
+node03 ansible_host=192.168.1.34 ansible_user=node03 ansible_become_pass="{{ ansible_become_pass_node03 }}"

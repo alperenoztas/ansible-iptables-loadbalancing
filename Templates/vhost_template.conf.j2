@@ -1,0 +1,8 @@
+<VirtualHost *:{{ item.port }}>
+    # ServerAdmin directive is optional
+    ServerAdmin webmaster@localhost
+    DocumentRoot {{ item.document_root }}
+
+    ErrorLog ${APACHE_LOG_DIR}/{{ item.name }}_error.log
+    CustomLog ${APACHE_LOG_DIR}/{{ item.name }}_access.log combined
+</VirtualHost>
